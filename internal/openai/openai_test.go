@@ -55,7 +55,7 @@ func TestEdit(t *testing.T) {
 
 func TestChat(t *testing.T) {
 	respCh, errCh := openai.Chat(context.Background(), &openai.ChatRequest{
-		Model:  "gpt-3.5-turbo-0301",
+		Model:  "gpt-4",
 		Stream: false,
 		Message: []openai.ChatMessage{
 			{

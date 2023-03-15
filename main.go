@@ -48,7 +48,7 @@ func main() {
 		session = append(session, userMsg)
 
 		respCh, errCh := openai.Chat(context.Background(), &openai.ChatRequest{
-			Model:   "gpt-3.5-turbo-0301",
+			Model:   "gpt-4",
 			Stream:  true,
 			Message: session,
 		})
